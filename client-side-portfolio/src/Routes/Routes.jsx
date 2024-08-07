@@ -6,6 +6,7 @@ import Main from "../Componets/Main";
 
 // import Banner from "../Componets/Banner";
 import Home from "../Pages/Home/Home";
+import About from "../Componets/About";
 
 
 
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element:<Home></Home>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             }
         ]
       },

@@ -4,48 +4,46 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  mode: "jit",
-  theme: {
-    extend: {
-      colors: {
-        primary: "#011825",
-        secondary: "#F0EFEB",
-        tertiary: "#0D3056",
-        quaternary: "#1689C8",
-      },
-      screens: {
-        'xs': "450px",
-        '3xl': "2160px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.jpeg')",
-      },
-      keyframes: {
-        textRotate1: {
-          '0%, 40%': { transform: 'translate3d(0, 0%, 0) rotateX(0deg)' },
-          '60%, 100%': { transform: 'translate3d(0, -100%, 0) rotateX(-90deg)' },
-        },
-        textRotate2: {
-          '0%, 40%': { transform: 'translate3d(0, 100%, 0) rotateX(-90deg)' },
-          '60%, 100%': { transform: 'translate3d(0, 0%, 0) rotateX(0deg)' },
-        },
-      },
-      animation: {
-        textRotate1: 'textRotate1 2.4s infinite alternate',
-        textRotate2: 'textRotate2 2.4s infinite alternate',
-      },
-      fontSize: {
-        title: '2rem',
-        subtitle: '1.5rem',
-      },
-    },
-  },
+
+
  
   plugins: [
     require('daisyui'),
   ],
-  daisyui: {
-    themes: ['light'],
+  // daisyui: {
+  //   themes: ['light'],
+  // },
+  theme: {
+    extend: {
+      animation: {
+        typewriter: 'typewriter 2s steps(11) forwards',
+        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: '100%',
+          },
+        },
+        blink: {
+          '0%': {
+            opacity: '0',
+          },
+          '0.1%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '1',
+          },
+          '50.1%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
+      },
+    },
   },
 }
 
