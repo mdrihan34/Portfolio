@@ -2,8 +2,8 @@ import AboutPhoto from '../assets/Image/about.jpeg'
 import './about.css'
 const About = () => {
   return (
-    <div>
-      <h1 className="text-center my-10 text-4xl font-extrabold text-white">About ME</h1>
+    <div className='mt-10 lg:mt-36'>
+      <h1 className="text-center my-10 mb-12 px-6 text-4xl font-extrabold">About ME</h1>
     <div className='lg:flex container mx-auto gap-10 boxs shadow-xl  lg:ml-52'>
     <div>
    <img className='w-72 lg:w-[24rem] mx-auto lg:max-w-sm  rounded-xl' src={AboutPhoto} alt="about photo" />

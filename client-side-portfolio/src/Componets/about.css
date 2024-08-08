@@ -48,3 +48,53 @@
         transform: rotate(360deg);
     }
 }
+.boxss {
+    padding: 56px 50px;
+ 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+.boxss::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(red,
+            rgb(255, 0, 0),
+            rgb(123, 0, 255),
+            rgb(255, 0, 123),
+            blue,
+            rgb(244, 240, 239),
+            red);
+    animation: spin 2s linear infinite;
+    z-index: -2;
+}
+
+.boxss::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #000;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
