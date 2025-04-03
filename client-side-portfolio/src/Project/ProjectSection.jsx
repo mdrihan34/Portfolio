@@ -11,7 +11,7 @@ const ProjectSection = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   useEffect(() => {
-    fetch('/project')
+    fetch('https://portfolio-w7p2.vercel.app/project')
       .then((res) => res.json())
       .then((data) => {
         setProjects(Array.isArray(data) ? data : [data]);

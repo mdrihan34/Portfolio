@@ -30,7 +30,7 @@ const ProjectCards = ({ project  }) => {
       if (result.isConfirmed) {
         try {
           // Delete project after confirmation
-          await axios.delete(`https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/project/${project._id}`);
+          await axios.delete(`https://portfolio-w7p2.vercel.app/project/${project._id}`);
           Swal.fire('Deleted!', 'Your project has been deleted.', 'success');
         } catch (error) {
           console.error("Error deleting project:", error);

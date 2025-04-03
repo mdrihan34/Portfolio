@@ -30,14 +30,20 @@ const Banner = () => {
     }); 
 },);
   const [resume, setResume] = useState([]);
-  fetch('https://portfolio-w7p2.vercel.app/resume')
-  .then((res) => res.json())
-  .then((data) => {
-  
-    setResume(data); 
+  fetch("https://portfolio-w7p2.vercel.app/resume", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    mode: "cors"
   })
-  .catch((error) => console.error('Error fetching resume:', error));
- console.log(resume)
+    .then((response) => response.json())
+    .then((data) =>
+     
+     setResume(data[0]))
+  
+    .catch((error) => console.error("Error:", error));
+console.log(resume)
   return (
     <div className="banner-container  ">
       {/* <video className="video-background" autoPlay loop muted>

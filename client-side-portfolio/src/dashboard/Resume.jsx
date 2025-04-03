@@ -8,9 +8,9 @@ const Resume = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/resume")
+    axios.get("https://portfolio-w7p2.vercel.app/resume")
       .then((response) => {
-        setResume(response.data);
+        setResume(response.data[0]);
       })
       .catch((error) => console.error("Error fetching resume link:", error))
       .finally(() => setLoading(false));
@@ -20,9 +20,9 @@ const Resume = () => {
     if (newLink.trim() !== "") {
       try {
         if (resume) {
-          await axios.put(`https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/resume/${resume._id}`, { link: newLink });
+          await axios.put(`https://portfolio-w7p2.vercel.app/resume/${resume._id}`, { link: newLink });
         } else {
-          await axios.post("https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/resume", { link: newLink });
+          await axios.post("https://portfolio-w7p2.vercel.app/resume", { link: newLink });
         }
         setResume({ link: newLink });
         setShowModal(false);
