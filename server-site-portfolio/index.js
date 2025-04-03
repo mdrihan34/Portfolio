@@ -10,7 +10,7 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://your-frontend-domain.com"], 
+  origin: ["http://localhost:5173", "https://portfolio-jxehi35y6-rihan2045s-projects-8a229069.vercel.app"], 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true 
 };
