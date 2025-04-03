@@ -5,6 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   
   plugins: [react()],
-  assetsInclude: ['**/*.glb']
-  
+  assetsInclude: ['**/*.glb'],
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://server-site-portfolio-czyvsxb2r-rihan2045s-projects-8a229069.vercel.app",
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  }
 })

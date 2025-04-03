@@ -1,0 +1,9 @@
+# Ignore .vercel folder (Vercel deployment)
+.vercel/
+
+# Ignore .env files (Environment variables)
+.env
+.env.local
+
+# Ignore node_modules (dependency folder)
+node_modules/

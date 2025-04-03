@@ -5,7 +5,7 @@ import { SiMongodb, SiTailwindcss } from 'react-icons/si';
 const Footer = () => {
   return (
     <div>
-   <footer className="bg-gray-900 text-white py-6 mt-16">
+   <footer className="bg-gray-900 text-white py-6 ">
       <div className="container mx-auto px-4">
 
         {/* RIHANDEV Logo and Motto */}

@@ -3,12 +3,19 @@ import { SiRedux } from 'react-icons/si';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoNodejs } from 'react-icons/io';
 import { BiLogoMongodb } from 'react-icons/bi';
+import SkillBg from '../../public/image/skills.png'
 const Skills = () => {
   return (
-    <div className='mt-10 lg:mt-36'>
-      <h1 className="text-center my-10 mb-12 px-6 text-4xl font-extrabold lg:mb-20">My Skills</h1>
+    <div className='py-10'  style={{ backgroundImage: `url(${SkillBg})` , backgroundRepeat : 'no-repeat', backgroundSize : 'cover'}}>
+      
+      <div className="text-center py-8">
+      <h2 className="text-4xl font-bold text-white uppercase relative inline-block">
+      My Skills
+        <span className="block h-1 w-16 bg-blue-500 mx-auto mt-2"></span>
+      </h2>
+    </div>
      <div className="lg:flex md:flex gap-10 justify-center lg:px-44">
-      <div className="shadow-xl rounded-xl w-full bg-black p-8 text-white">
+      <div className="shadow-xl rounded-xl w-full  p-8 text-white">
         <div className='text-center'>
         <h1 className='text-2xl font-bold text-orange-500'>Frontend Development</h1>
         <p>Crafting user-friendly interfaces.</p>
@@ -73,17 +80,7 @@ const Skills = () => {
         </div>
     </a> 
 
-    <a href="#" className="block boxs w-1/2 py-10  rounded-xl lg:py-4 text-center  lg:w-32 lg:h-32">
-        <div>
-          <SiRedux className="block mx-auto text-5xl text-sky-400"></SiRedux>
-           
-
-            <p className="pt-4 text-sm font-medium capitalize  font-body text-yellow-500 lg:font-bold lg:text-lg md:text-base md:pt-6">
-              Redux
-            </p>
-        </div>
-    </a> 
-
+   
 
  
 </div>
@@ -91,7 +88,7 @@ const Skills = () => {
 </div>
         </div>
       </div>
-      <div className="shadow-xl w-full rounded-xl bg-black p-8 text-white">
+      <div className="shadow-xl w-full rounded-xl  p-8 text-white">
      <div className='text-center'>
      <h1 className='text-2xl font-bold text-orange-500'>Backend Development</h1>
      <p>Building scalable backends.</p>
@@ -134,17 +131,7 @@ const Skills = () => {
         </div>
     </a> 
 
-    <a href="#" className="block boxs w-1/2 py-10  rounded-xl lg:py-4 text-center  lg:w-32 lg:h-32">
-        <div>
-        <img className="block mx-auto w-12 text-sky-400" src="https://i.postimg.cc/wT40W7JD/free-rest-api-blue-logo-icon-22098-thumb.png" alt="" />
-           
-
-            <p className="pt-4 text-sm font-medium capitalize  font-body text-yellow-500 lg:font-bold lg:text-lg md:text-base md:pt-6">
-            REST API
-            </p>
-        </div>
-    </a> 
-
+  
    
 
     <a href="#" className="block boxs w-1/2 py-10 px-4 rounded-xl lg:py-4 text-center  lg:w-36 lg:h-32">
@@ -168,7 +155,7 @@ const Skills = () => {
       </div>
      </div>
       <div className='lg:px-[17%]'>
-        <div className="shadow-xl rounded-xl lg:w-1/2 lg:mx-80 mt-10 bg-black p-8 text-white">
+        <div className="shadow-xl rounded-xl lg:w-1/2 lg:mx-80 mt-10  p-8 text-white">
          <h1 className='text-2xl font-bold text-orange-500 text-center'>Version Control </h1>
          <div className="container relative z-40 mx-auto mt-12">
           <div className="flex gap-2  lg:gap-8 lg:grid-cols-3 flex-wrap justify-center  lg:w-full md:w-5/6 xl:shadow-small-blue">

@@ -4,6 +4,9 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-image: url('../../public/image/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .video-background {
