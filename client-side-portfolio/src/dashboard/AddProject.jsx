@@ -5,7 +5,7 @@ const AddProject = () => {
 
 
     const onSubmit = (data) => {
-        fetch('https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/project', {
+        fetch('https://portfolio-w7p2.vercel.app/project', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

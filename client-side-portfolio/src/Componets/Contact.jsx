@@ -9,7 +9,7 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     setLoading(true);
-    fetch('https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/message', {
+    fetch('https://portfolio-w7p2.vercel.app/message', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),

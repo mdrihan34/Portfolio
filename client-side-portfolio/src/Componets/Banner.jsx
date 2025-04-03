@@ -30,7 +30,7 @@ const Banner = () => {
     }); 
 },);
   const [resume, setResume] = useState([]);
-  fetch('https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/resume')
+  fetch('https://portfolio-w7p2.vercel.app/resume')
   .then((res) => res.json())
   .then((data) => {
   

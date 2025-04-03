@@ -60,7 +60,7 @@ const ProjectCards = ({ project  }) => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.put(`https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/project/${project._id}`, editedProject);
+          await axios.put(`https://portfolio-w7p2.vercel.app/project/${project._id}`, editedProject);
           Swal.fire('Updated!', 'Your project has been updated.', 'success');
           setIsEditing(false); // Close the form after successful update
         } catch (error) {

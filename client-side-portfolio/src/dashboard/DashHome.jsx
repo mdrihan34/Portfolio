@@ -6,7 +6,7 @@ const DashHome = () => {
     const [projects, setProjects] = useState([]);
   
     // Fetching the projects from the server
-    fetch('https://server-site-portfolio-7mtdx1ohr-rihan2045s-projects-8a229069.vercel.app/project')
+    fetch('https://portfolio-w7p2.vercel.app/project')
     .then((res) => res.json())
     .then((data) => {
     
