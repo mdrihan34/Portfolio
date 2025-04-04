@@ -62,7 +62,7 @@ const PrivateDash = ({ children }) => {
               </Link>
             </form>
 
-            <div className="absolute md:right-[34%] right-[10%] lg:right-[42%] top-[46%] sm:top-[47%]">
+            <div className="absolute md:right-[34%] right-[10%] lg:right-[42%] top-[47%] sm:top-[47%]">
               {viwePass === "password" ? (
                 <button type="button" onClick={handleChnage}>
                   <IoIosEyeOff />
