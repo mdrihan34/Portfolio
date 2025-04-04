@@ -10,9 +10,13 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://portfolio-jxehi35y6-rihan2045s-projects-8a229069.vercel.app"], 
+  origin: [
+    "http://localhost:5173", 
+    "https://rihan-dev.vercel.app"
+  ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true 
+  credentials: true, 
+  optionsSuccessStatus: 204  // Preflight issue fix
 };
 app.use(cors(corsOptions));
 app.use(express.json());
